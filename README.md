@@ -1,5 +1,10 @@
 
-# Chatroom Project - Sigma Chat
+# Chatroom Project - Sigma Chat  
+
+![Python 3.12.3](https://img.shields.io/badge/python-3.12.3-blue.svg?logo=python&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white)
+![MongoDB](https://img.shields.io/badge/-MongoDB-13aa52?&logo=mongodb&logoColor=white)  
 
 ![Project Banner](static/images/banner.png)
 
@@ -12,7 +17,7 @@ you enter a chatroom and compete against other users in correcting lines of code
 with syntax errors in *C++*. It has features such as realtime events handling, leaderboards,
 friend list and more.
 
-## 📌 Table of Contents
+## Table of Contents
 - [Features](#-features)
 - [Demo](#-demo)
 - [Installation](#-installation)
@@ -21,14 +26,13 @@ friend list and more.
 - [Configuration](#-configuration)
 - [Tech Stack](#-tech-stack)
 - [Contributing](#-contributing)
-- [License](#-license)
 
-## ✨ Features
+## Features
 - User authentication system
 - Real-time chat functionality
 - In-game leaderboard
 
-## 🎥 Demo
+## Demo
 | Feature          | Preview                          |
 |------------------|----------------------------------|
 | Login Screen     | ![Login](static/images/demo-login.png) |
@@ -59,7 +63,7 @@ pip install -r requirements.txt
 python run.py
 ```
 
-## 📂 Project Structure
+## Project Structure
 ```
 ├── app/
 │   ├── auth/
@@ -76,7 +80,7 @@ python run.py
 └── run.py
 ```
 
-## 🚀 Usage
+## Usage
 Start the application and access these endpoints:
 - `/login` - User authentication
 - `/chat` - Real-time chat
@@ -88,7 +92,7 @@ from app.main import create_app
 app = create_app()
 ```
 
-## 💾 Database Setup
+## Database Setup
 
 This project uses a **MariaDB** or **MySQL** database. Follow these steps to set up the required database and user before running the application.
 
@@ -104,10 +108,10 @@ The values for `DB_USER` and `DB_PASSWORD` **must** match the credentials you cr
 
 ```bash
 # .env file content
-SECRET_KEY="holaXD"
+SECRET_KEY=""
 DB_HOST="localhost"
 DB_USER="chatroom_user"
-DB_PASSWORD="choco"
+DB_PASSWORD=""
 
 
 ## Run this command from your project's root directory:
@@ -116,23 +120,20 @@ sudo mariadb -u root -p < db_setup.sql
 ## ⚙️ Configuration
 Edit `app/main/config.py`:
 ```python
-SECRET_KEY = 'holaXD'
+SECRET_KEY = ''
 DATABASE_URI = 'mongodb://localhost:27017/'
 ```
 
-## 🔧 Tech Stack
+## Tech Stack
 - Python 3.x
 - Flask
 - MongoDB
 - Socket.IO
 - HTML/CSS
 
-## 🤝 Contributing
+## Contributing
 1. Fork the project
 2. Create your feature branch
 3. Commit your changes
 4. Push to the branch
 5. Open a pull request
-
-## 📜 License
-[MIT](LICENSE)
