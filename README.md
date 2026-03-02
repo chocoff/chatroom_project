@@ -8,9 +8,7 @@
 
 ![Project Banner](static/images/banner.png)
 
-This is a *Database System* course final project. The objective is to create a 
-chatroom application using contents we learned throughout this course, mainly
-focusing in the use of **SQL & NoSQL**.
+The objective is to create a chatroom application using contents studied regarding backend, mainly focusing in the use of **SQL & NoSQL**.
 
 Our approach led to the output of SigmaChat, a coding competition site in which
 you enter a chatroom and compete against other users in correcting lines of codes
@@ -18,14 +16,13 @@ with syntax errors in *C++*. It has features such as realtime events handling, l
 friend list and more.
 
 ## Table of Contents
-- [Features](#-features)
-- [Demo](#-demo)
-- [Installation](#-installation)
-- [Project Structure](#-project-structure)
-- [Usage](#-usage)
-- [Configuration](#-configuration)
-- [Tech Stack](#-tech-stack)
-- [Contributing](#-contributing)
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Tech Stack](#tech-stack)
 
 ## Features
 - User authentication system
@@ -39,7 +36,7 @@ friend list and more.
 | Chat Interface   | ![Chat](static/images/demo-chat.png)   |
 | Leaderboard      | ![Leaderboard](static/images/demo-leaderboard.png) |
 
-## 🛠️ Installation
+## Installation
 1. Clone the repository:
 ```bash
 git clone https://github.com/FerRojasChoco/chatroom_project.git
@@ -116,8 +113,8 @@ DB_PASSWORD=""
 
 ## Run this command from your project's root directory:
 sudo mariadb -u root -p < db_setup.sql
-
-## ⚙️ Configuration
+```
+## Configuration
 Edit `app/main/config.py`:
 ```python
 SECRET_KEY = ''
@@ -130,10 +127,3 @@ DATABASE_URI = 'mongodb://localhost:27017/'
 - MongoDB
 - Socket.IO
 - HTML/CSS
-
-## Contributing
-1. Fork the project
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a pull request
